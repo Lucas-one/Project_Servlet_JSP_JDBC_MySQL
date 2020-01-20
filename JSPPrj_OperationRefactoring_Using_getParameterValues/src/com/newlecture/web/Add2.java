@@ -18,19 +18,14 @@ public class Add2 extends HttpServlet {
 		response.setContentType("text/html; charset=UTF-8");
 		//배열 처럼 받아올 때 getParameterValues
 		String[]num_= request.getParameterValues("num");		
-		String y_ = request.getParameter("y");
 		
 		int result = 0;
 		
-		for(int i = 0; i< num.lenght; i++) {
+		for(int i = 0; i< num_.length; i++) {
 			int num = Integer.parseInt(num_[i]);
 			result += num;
 		}
 		
-		if(!x_.equals("")) x = Integer.parseInt(x_);
-		if(!y_.equals("")) y = Integer.parseInt(y_);
-		
-		int result = x + y;
 		
 		response.getWriter().printf("result is %d\n", result);
 	}
