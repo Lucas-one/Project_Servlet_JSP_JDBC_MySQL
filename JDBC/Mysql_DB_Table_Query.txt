@@ -1,0 +1,53 @@
+create database People;
+SHOW DATABASES;
+use people;
+show tables;
+
+create table NOTICE(
+ID INT,
+TITLE VARCHAR(100),
+WRITER_ID VARCHAR(50),
+CONTENT TEXT,
+REGDATE timestamp,
+HIT INT,
+FILES VARCHAR(1000)
+);
+
+CREATE TABLE COMMENT(
+ID INT,
+CONTENT VARCHAR(2000),
+REGDATE TIMESTAMP,
+WRITER_ID VARCHAR(50),
+NOTICE_ID INT
+);
+
+CREATE TABLE ROLE(
+ID VARCHAR(50),
+DISCRIPTION VARCHAR(500)
+);
+
+CREATE TABLE MEMBER_ROLE(
+MEMVER_ID VARCHAR(50),
+ROLE_ID VARCHAR(50)
+);
+
+CREATE TABLE `MEMBER`(
+ID VARCHAR(50),
+PWD VARCHAR(50),
+NAME VARCHAR(50),
+GENDER CHAR(2),
+BIRTHDAY CHAR(10)
+);
+
+set SQL_SAFE_UPDATES = 0;
+DELETE FROM notice WHERE id =1;
+DELETE FROM notice WHERE id =2;
+DELETE FROM notice WHERE id =3;
+
+insert into notice values(1, 'JDBC test','English','aaa',now(), 0,'');
+insert into notice values(2, 'JDBC test2','English2','bbb',now(), 10,'');
+insert into notice values(3, 'JDBC test3','English3','ccc',now(), 7,'');
+insert into notice values(4, 'JDBC test4','English3','ccc',now(), 13,'');
+
+desc notice;
+select * from notice;
