@@ -39,7 +39,7 @@ public class NoticeService {
 			PreparedStatement st = con.prepareStatement(sql);
 
 			st.setString(1, "%"+query+"%");
-			st.setInt(2, page); // 이거 다시봐야한다., (1,1+(page-1) * 10)
+			st.setInt(2, page-1); // 이거 다시봐야한다., (1,1+(page-1) * 10)
 			st.setInt(3, 10);// 갑자기 왜 꺠졌지
 			// Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery();
