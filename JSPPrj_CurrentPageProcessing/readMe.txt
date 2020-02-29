@@ -1,0 +1,1 @@
+The bottom of the page is the current page number, and 'orange bold' is applied to the button.
