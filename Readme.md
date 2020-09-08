@@ -13,6 +13,7 @@
 > ## Abstract
 
 MVC2 패턴으로 공지사항 게시판을 구현했습니다. </br>
+JSSPrj_fileUpload(최종본)를 확인해주세요. </br>
 
 - 웹페이지에서 게시글 등록, 삭제
 - DB에 저장되어있는 데이터 웹페이지에 표기
@@ -32,18 +33,18 @@ Controller는 Servlet으로, View는 JSP로 구현했습니다. JDBC를 활용�
 
 
 > ## 첫 화면
-![indexPage_after](./image/indexPage_after.png)
+![indexPage_after](./image/indexPage_after.PNG)
 
 > ## 공지사항 리스트
 
-![regOutput_list](./image/regOutput_list.png)
+![regOutput_list](./image/regOutput_list.PNG)
 
 > ## 공지사항 등록
-![regPageOutPut](./image/regPageOutPut.png)
+![regPageOutPut](./image/regPageOutPut.PNG)
 
 > ## 파일 업로드
-![2filesUploading](./image/2filesUploading.png)
-![2filesUploading_Result](./image/2filesUploading_Result.png)
+![2filesUploading](./image/2filesUploading.PNG)
+![2filesUploading_Result](./image/2filesUploading_Result.PNG)
 
 
 > ## Reference
